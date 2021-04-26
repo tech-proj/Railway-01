@@ -1,0 +1,84 @@
+/* body - set background color*/
+body {
+    background-color: #c4c4c4;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 16px;
+}
+
+header {
+    min-height: 30px;
+    padding: 2rem;
+    background-color: #ffffff;
+}
+
+nav {
+    background-color: #726666;
+}
+
+footer {
+    min-height: 30px;
+    padding: 2rem;
+    width: 100%;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0;
+}
+
+/* flex box */
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.card {
+    padding: 1rem;
+    margin: 5rem;
+    background-color: #ffffff;
+    max-width: 350px;
+    border-radius: 0.5rem;
+}
+.card__img-top {
+    margin-bottom: 0.5rem;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+}
+
+.card__title {
+    color: #282828;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.card__description {
+    color: #808080;
+    font-size: 0.75rem;
+    font-weight: 400;
+    
+}
+/* For PC screen*/
+@media screen and (min-width: 1200px) {
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .card {
+        margin: 1rem;
+    }
+    .card__description {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .card__description {
+        display: none;
+    }
+    .card {
+        margin: 1rem;
+    }
+}
